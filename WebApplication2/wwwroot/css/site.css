@@ -1,0 +1,123 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #181818;
+}
+
+.form-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+
+form {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45%; 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: aliceblue
+}
+
+#materialImage {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.divider {
+    color: aliceblue;
+}
+
+#searchArticleInput {
+    margin-bottom: 10px;
+}
+/* Custom Select2 dropdown styling */
+.bigger-dropdown .select2-results__options {
+    max-height: 300px !important; /* Adjust this value as needed */
+    overflow-y: auto !important;
+    padding: 8px 6px !important; /* Increase padding for taller options */
+    line-height: 1.5 !important; /* Increase line height */
+    min-height: 36px !important; /* Minimum height for each option */
+}
+
+/* Make the dropdown wider if needed */
+.select2-container--default .select2-selection--single {
+    height: 38px !important;
+    line-height: 38px !important;
+}
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 38px !important;
+    }
+* Selected pairs bubbles */
+.selected-pair-bubble {
+    position: relative;
+    padding-right: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.selected-pair-bubble button {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    font-size: 0.75rem;
+}
+
+.selected-pair-bubble:hover {
+    background-color: #0b5ed7 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.selected-pair-bubble button:hover {
+    opacity: 1;
+}
+
+/* Images container */
+#images-container .image-card {
+    transition: transform 0.3s ease;
+}
+
+    #images-container .image-card:hover {
+        transform: translateY(-5px);
+    }
+
+.card-img-top {
+    height: 250px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
+
+/* Placeholder styling */
+#imagePlaceholder {
+    display: block;
+    font-size: 1.2rem;
+}
+.hidden {
+    display: none !important;
+}
