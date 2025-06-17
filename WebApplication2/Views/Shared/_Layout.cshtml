@@ -1,4 +1,4 @@
-﻿@{
+@{
     var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
     if (string.IsNullOrEmpty(currentAction) || currentAction == "Index")
     {
@@ -73,10 +73,12 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - IRSAP spa - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - IRSAP spa
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
